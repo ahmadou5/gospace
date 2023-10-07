@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "../Button";
-//import { RiMenuLine } from "react-icons/ri";
+import { RiMenuLine } from "react-icons/ri";
 //import { NavList } from "../NavList";
 import { useState } from "react";
 import Link from "next/link";
@@ -17,30 +17,26 @@ export const Navbar = () => {
   const Pages = [
     
     {
-      name: 'Feutures',
+      name: 'Vehicles',
       url: '',
       status: 'Live',
     },
     {
-      name: 'About',
+      name: 'Engines',
       url: '',
       status: 'Coming Soon',
     },
     {
-      name: 'Event',
+      name: 'Destination',
       url: '',
       status: 'Coming Soon',
     },
     {
-      name: 'Jobs',
+      name: 'Trip',
       url: '',
       status: 'Coming Soon',
     },
-    {
-      name: 'Contact',
-      url: '',
-      status: 'Live',
-    },
+    
   ]
   return (
     <>
@@ -58,7 +54,7 @@ export const Navbar = () => {
           <div className="mr-2 ml-auto mt-auto mb-auto">
             <div className="flex flex-row">
               <p onClick={handleClick} className="ml-2  mr-2">
-                hey
+                <RiMenuLine />
               </p>
             </div>
           </div>
@@ -68,7 +64,7 @@ export const Navbar = () => {
       {/**for desktop view **/}
       <div
         style={{ "backdrop-filter": "blur(12px)" }}
-        className=" bbackdrop-blur-lg bg-clip-padding bg-opacity-60 fixed z-10 text-black lg:flex md:flex hidden w-[100%] h-20"
+        className=" backdrop-blur-lg bg-clip-padding bg-opacity-60 fixed z-10 text-white lg:flex md:flex hidden w-[100%] h-20"
       >
         <div className="py-5 px-5  mt-auto mb-auto ml-auto mr-auto w-[98%] flex flex-row  h-[90%]">
           <div className="ml-0 mr-auto">

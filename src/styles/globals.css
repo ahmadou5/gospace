@@ -17,6 +17,12 @@
 }
 
 body {
- 
+ background-color: black;
     
+}
+
+#th {
+  background-image: url('/plan.png');
+  background-size: cover;
+  background-position: center;
 }

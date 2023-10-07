@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { Button, LoginButton } from "../Buttons"
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth'
-import { Provider, Auth, app } from "../../../firebaseConfig";
+
 
 
 export const LoginCard = () => {
@@ -29,7 +29,6 @@ export const LoginCard = () => {
     <div className="w-[98%] mt-16 mb-8 h-[500px] rounded-xl py-3 text-black px-3 backdrop-blur-xl shadow-xl drop-shadow-xl bg-white" >
         <div className=" text-black drop-shadow-xl rounded-lg h-8 py-1 mt-3 mb-3 font-2xl w-[60%] ml-auto mr-auto">
             <div onClick={handleClick} className="text-lg mb-5 font-light">
-               {`im ${name} by name`}
             </div>
             <div className="text-2xl font-extralight">
             {show ? 'Sign-in' : 'Sign-up'}
