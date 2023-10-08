@@ -21,8 +21,14 @@ body {
     
 }
 
+#bg {
+  background-image: url('/spc1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
 #th {
-  background-image: url('/plan.png');
+  background-image: url('/plan2.png');
   background-size: cover;
   background-position: center;
 }
