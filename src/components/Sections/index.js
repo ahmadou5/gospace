@@ -134,7 +134,7 @@ export const Footer = ({}) => {
         <div>
           <p className="font-extralight mb-[80px] mt-[60px] text:xl lg:text-3xl">Sponsored By</p>
         </div>
-        <div className="lg:w-[60%] flex w-[88%] flex ml-auto mr-auto mt-[40px]">
+        <div className="lg:w-[60%] w-[88%] flex ml-auto mr-auto mt-[40px]">
           {sponsorers.map((spons, i) => (
              <div key={i} className="ml-auto mr-auto py-1 px-1 h-[80%] w-[90%]">
                 <img alt={spons.name} className='w-[45%] h-[42%]' src={`./${spons.url}`} />
