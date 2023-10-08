@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Inter,Poppins } from 'next/font/google'
 import { Navbar } from '@/components/Navbar'
 import { Hero } from '@/components/Hero'
+import { Footer, Subscribe, Powered} from '@/components/Sections'
 import { ParaProvider} from '@/config/Parallax'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -17,6 +18,9 @@ export default function Home() {
       <ParaProvider>
        <Navbar />
        <Hero/>
+       <Powered />
+       <Subscribe />
+       <Footer />
       </ParaProvider>
     </main>
 
